@@ -9,7 +9,7 @@ nlp = spacy.load('en_core_web_sm')
 wiki_wiki = wikipediaapi.Wikipedia('en')
 def get_text(topic):
     page_py = wiki_wiki.page(topic)
-    return page_py.summary[0:6000]
+    return page_py.text
 
 
 def main():
