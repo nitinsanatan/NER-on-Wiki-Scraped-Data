@@ -20,10 +20,10 @@ def main():
 
     if choice== "Home":
         st.subheader("Named Entity Recognition")    
-        topic=st.text_area("Search Topic","Enter your topic here")
+        topic=st.text_area("Wikipedia Search","Title of Article")
         raw_text=get_text(topic)
         docx= nlp(raw_text)
-        if st.button("Analyze"):
+        if st.button("Extract & Analyze"):
             spacy_streamlit.visualize_ner(docx,labels=nlp.get_pipe('ner').labels)
 
 
