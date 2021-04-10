@@ -1,4 +1,4 @@
 Wikipedia-API
 spacy
 spacy_streamlit
-en_core_web_sm
+spacy-en_core_web_sm
